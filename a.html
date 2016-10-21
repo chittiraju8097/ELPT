@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery-ui.min.js"></script>
+      <title>jQuery UI ProgressBar functionality</title>
+      <link href="assets/css/jquery-ui.css" rel="stylesheet">
+  <script>
+         $(function() {
+            var availableTutorials = [
+               "ActionScript",
+               "Boostrap",
+               "C",
+               "C++",
+               "Ecommerce",
+               "Jquery",
+               "Groovy",
+               "Java",
+               "JavaScript",
+               "Lua",
+               "Perl",
+               "Ruby",
+               "Scala",
+               "Swing",
+               "XHTML"	
+            ];
+            $( "#automplete-3" ).autocomplete({
+               minLength:2,   
+               delay:500,   
+               source: availableTutorials
+            });
+         });
+      </script>
+   </head>
+   <body>
+      <!-- HTML --> 
+      <div class="ui-widget">
+      <p>Type two letter for e.g:ja,sc etc</p>
+         <label for="automplete-3">Tags: </label>
+         <input id="automplete-3">
+      </div>
+   </body>
+</html>
